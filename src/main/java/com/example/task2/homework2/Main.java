@@ -7,8 +7,11 @@ public class Main {
     public static void main(String[] args) {
         FullStack fullStack = new DeveloperFull();
         Backender backender = new DeveloperBack();
+        Frontender frontender = new DeveloperFull();
 
         List<Backender> backenders = Arrays.asList(fullStack, backender);
+
+        frontender.createFront();
 
         for(Backender back: backenders){
            if(back instanceof Frontender){
