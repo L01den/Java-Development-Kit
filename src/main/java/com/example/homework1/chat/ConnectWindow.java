@@ -1,4 +1,4 @@
-package ru.geekbrains.chat;
+package com.example.homework1.chat;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;

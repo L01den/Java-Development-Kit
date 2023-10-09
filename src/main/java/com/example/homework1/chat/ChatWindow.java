@@ -1,4 +1,4 @@
-package ru.geekbrains.chat;
+package com.example.homework1.chat;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -17,7 +17,7 @@ public class ChatWindow extends JFrame {
     private int WINDOW_WIDTH = 720;
     private int WINDOW_POS_X = 300;
     private int WINDOW_POS_Y = 100;
-    private String WINDOW_TITLE = "Чат сервера № :";
+    private String WINDOW_TITLE = "Чат сервера № ";
 
 
     private String login;

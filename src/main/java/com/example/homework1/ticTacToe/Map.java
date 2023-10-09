@@ -1,4 +1,4 @@
-package ru.geekbrains.ticTacToe;
+package com.example.homework1.ticTacToe;
 
 import javax.swing.*;
 import java.awt.*;
