@@ -1,4 +1,4 @@
-package com.example.task4;
+package com.example.task5;
 
 public class Philosopher extends Thread{
     @Override

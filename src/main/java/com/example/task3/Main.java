@@ -29,9 +29,6 @@ public class Main {
             System.out.println(person);
         }
 
-
-
-
         var text = "Never forget what you are, for surely the world will not";
 
         // BEGIN (write your solution here)
