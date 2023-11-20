@@ -37,17 +37,24 @@ public class Play {
 //                System.out.println();
 
             } else {
-                player = isTurnRandom();
+                if (mode == 1) {
+                    isTurnOne();
+                    player = sameChoice;
+                } else {
+                    player = isTurnRandom();
+                }
 //                System.out.printf("Финал: Игрок выбрал дверь: %d \n", player);
                 door = openingDoor(player);
 //                System.out.println("Финал: Ведущий открывает дверь: " + door);
 //                System.out.println(doors.getCar());
-//                System.out.println();
+//                System.out.println("Выбор игрока: " + sameChoice);
                 if (player == doors.getCar()) {
 //                    System.out.println("Игрок выиграл машину");
+//                    System.out.println();
                     return 1;
                 } else {
 //                    System.out.println("Игрок проиграл");
+//                    System.out.println();
                     return 0;
                 }
             }

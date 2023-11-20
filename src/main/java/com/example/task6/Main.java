@@ -12,6 +12,7 @@ import java.util.Map;
 public class Main {
     public static void main(String[] args) {
         int result;
+        int size = 1000;
         Map<Integer, Integer> playCount = new HashMap<>();
         Map<Integer, Integer> playCount2 = new HashMap<>();
 
@@ -21,22 +22,22 @@ public class Main {
         playCount2.put(1, 0);
         playCount2.put(0, 0);
         for (int i = 0; i < 500; i++) {
-            Play play = new Play(1000, 2);
+            Play play = new Play(size, 2);
             result = play.start();
             accountRecord(result, playCount);
         }
         System.out.print("Рандомный выбор двери: ");
         System.out.println(playCount);
-        String result1 = "Дверь не меняется " + (playCount.get(1) * 100) / 500 + "% вероятность выигрыша\n";
+        String result1 = "Дверь не меняется " + (playCount.get(1) * 100) / size + "% вероятность выигрыша\n";
 
         for (int i = 0; i < 500; i++) {
-            Play play = new Play(1000, 1);
+            Play play = new Play(size, 1);
             result = play.start();
             accountRecord(result, playCount2);
         }
         System.out.print("Один выбор двери: ");
         System.out.println(playCount2);
-        String result2 = "Дверь меняется каждый раз " + (playCount2.get(1) * 100) / 500 + "% вероятность выигрыша\n";
+        String result2 = "Дверь меняется каждый раз " + (playCount2.get(1) * 100) / size + "% вероятность выигрыша\n";
 
 
         Path path = Paths.get("homework1/src/main/java/com/example/task6/notes.txt");
